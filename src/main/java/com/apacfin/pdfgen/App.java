@@ -1,5 +1,6 @@
 package com.apacfin.pdfgen;
 
+import java.awt.Color;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -127,12 +128,12 @@ public class App {
                         .startX(app.getStartX())
                         .startY(app.getStartY())
                         .table(myTable.build())
-                        .endY(100F)
+                        .endY(app.getEndY())
                         .build();
         tableDrawer.draw(()-> doc,() -> app.getPDPage() ,margin); /**/
         contentStream.close();
         app.generateHeader(doc,page);
-
+        app.generateFooter(doc, page);
         doc.save("C:\\Users\\APAC_NIKHIL.APACGP5846\\Downloads\\test1.pdf");
         System.out.println("Hello World!");
     }
@@ -223,8 +224,27 @@ public class App {
         return page.getMediaBox().getHeight() - this.getMarginY();
     }
 
-    private void generateFooter() {
-
+    private void generateFooter(PDDocument document, PDPage page) throws IOException{
+        if(this.getFooter()){
+            float y = this.getEndY();
+            PDPageContentStream contentStream = new PDPageContentStream(document, page, PDPageContentStream.AppendMode.APPEND, true, true);
+            contentStream.setStrokingColor(Color.BLACK);
+            contentStream.setLineWidth(1);
+            contentStream.moveTo(this.getMarginX(), y);
+            contentStream.lineTo(this.getMaxWritableWidth(page)+MARGIN,y);
+            contentStream.stroke();
+            this.generateText(contentStream, document, 
+                            this.loadFont("english", document), 
+                            "APAC FINANCIAL SERVICES", 
+                            MARGIN, 
+                            y - LEADING, 
+                            this.getMaxWritableWidth(page)- MARGIN, 
+                            this.getMarginX(), 
+                            LEADING, 
+                            "CENTER", 
+                            15);
+            contentStream.close();
+        }
     }
 
 
