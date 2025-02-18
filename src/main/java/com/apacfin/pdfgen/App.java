@@ -25,11 +25,11 @@ import org.vandeseer.easytable.structure.cell.TextCell;
 
 public class App {
 
-    static final float MARGIN = 50F;
+    static final float MARGIN = 30F;
 
     static final float LEADING = 1.5f * 12;
-    static final float IMAGEWIDTH = 60F;
-    static final float IMAGEHEIGHT = 60F;
+    static final float IMAGEWIDTH = 40F;
+    static final float IMAGEHEIGHT = 40F;
     static final float FOOTERHEIGHT = 150F;
 
     float startX;
@@ -75,18 +75,17 @@ public class App {
         
 
         String text = "தமிழ்நாடு (Tamil Nadu) என்பது இந்தியாவின், தென் முனையில் அமைந்துள்ள மாநிலங்களில் ஒன்றாகும். தமிழகம் என்றும் பரவலாக அழைக்கப்படும் இம்மாநிலமானது, பரப்பளவில் இந்தியாவின் பத்தாவது பெரிய மாநிலமாக மற்றும் மக்கள்தொகை அடிப்படையில் இந்தியாவின் ஆறாவது பெரிய மாநிலமாகத் திகழ்கிறது. உலகின் பழம்பெரும் மொழிகளில் ஒன்றான தமிழ் மொழி பேசும் தமிழர் வாழும் பகுதியே தமிழ்நாடு என வழங்கப்படுகிறது. இதன் தலைநகரமாக சென்னை உள்ளது.";
-        float margin = 50;
-
-        app.generateText(contentStream, doc, app.loadFont("tamil",doc), text, app.getStartX(), app.getStartY(), width, margin, App.LEADING, "LEFT", 10);
+       
+        app.generateText(contentStream, doc, app.loadFont("tamil",doc), text, app.getStartX(), app.getStartY(), width, app.getMarginX(), App.LEADING, "LEFT", 10, Color.BLACK);
          
         String text2 = "हम डाटा संग्रह टूल्स, जैसे की कुकीज के माध्यम से आपकी जानकारी एकत्र करते हैं ताकि आपको बेहतर और व्यक्तिगत अनुभव प्रदान कर सकें और लक्षित विज्ञापन पेश कर सकें। अगर आप साइन-अप करते हैं, तो हम आपका ईमेल पता, फोन नंबर और अन्य विवरण पूरी तरह सुरक्षित तरीके से स्टोर करते हैं। आप कुकीज नीति पृष्ठ से अपनी कुकीज हटा सकते है और रजिस्टर्ड यूजर अपने प्रोफाइल पेज से अपना व्यक्तिगत डाटा हटा या एक्सपोर्ट कर सकते हैं। हमारी Cookies Policy, Privacy Policy और Terms & Conditions के बारे में पढ़ें और अपनी सहमति देने के लिए Agree पर क्लिक करें।";
-        app.generateText(contentStream, doc, app.loadFont("hindi",doc), text2, app.getStartX(), app.getStartY(), width, margin, App.LEADING, "LEFT", 10);
+        app.generateText(contentStream, doc, app.loadFont("hindi",doc), text2, app.getStartX(), app.getStartY(), width, app.getMarginX(), App.LEADING, "LEFT", 10, Color.BLACK);
 
         String text3 = "ಕೇಂದ್ರ ಸರ್ಕಾರಿ ನೌಕರರ ವೇತನ ಮತ್ತು ಪಿಂಚಣಿದಾರರ ಪಿಂಚಣಿಗೆ ತಿದ್ದುಪಡಿಗಳನ್ನು ಪ್ರಸ್ತಾಪಿಸುವ 8ನೇ ವೇತನ ಆಯೋಗಕ್ಕೆ ಕೇಂದ್ರ ಸಚಿವ ಸಂಪುಟ ಅನುಮೋದನೆ ನೀಡಿದೆ. ಇದು ಮುಂದಿನ ವರ್ಷ ಜಾರಿಗೆ ಬರಲಿದೆ ಎಂದು ಹೇಳಲಾಗುತ್ತಿದೆ. 8ನೇ ವೇತನ ಆಯೋಗದ ಅಡಿಯಲ್ಲಿ ಕೇಂದ್ರ ಸರ್ಕಾರಿ ನೌಕರರು ಮತ್ತು ಪಿಂಚಣಿದಾರರಿಗೆ ಹಂತ 1 ರಿಂದ ಹಂತ 10 ರವರೆಗಿನ ವೇತನ ಹೆಚ್ಚಳ ಮತ್ತು ಪಿಂಚಣಿ ಹೆಚ್ಚಳ ಎಷ್ಟು ಎನ್ನುವ ಲೆಕ್ಕಾಚಾರವನ್ನು ಇಲ್ಲಿ ಕಾಣಬಹುದು.ಕನ್ನಡ ಭಾಷೆಯಲ್ಲಿ ಇತ್ತೀಚಿನ ಕರ್ನಾಟಕ, ದೇಶ, ವಿದೇಶ, ಮನರಂಜನೆ, ಶಿಕ್ಷಣ, ಉದ್ಯೋಗ, ಆರೋಗ್ಯ, ಜೀವನಶೈಲಿ, ಆಧ್ಯಾತ್ಮ,  ಕ್ರೀಡೆ, ಕ್ರೈಂ, ವೈರಲ್, ವ್ಯಾಪಾರ, ತಂತ್ರಜ್ಞಾನ ಸುದ್ದಿಗಳನ್ನು ಓದಲು ಈಗಲೇ ನಮ್ಮ ಜೀ ಕನ್ನಡ ನ್ಯೂಸ್ ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್ ಡೌನ್ಲೋಡ್ ಮಾಡಿ";
-        app.generateText(contentStream, doc, app.loadFont("kannada",doc), text3, app.getStartX(), app.getStartY(), width, margin, App.LEADING, "LEFT", 10);
+        app.generateText(contentStream, doc, app.loadFont("kannada",doc), text3, app.getStartX(), app.getStartY(), width, app.getMarginX(), App.LEADING, "LEFT", 10, Color.BLACK);
 
         String text4 = "మన టాలీవుడ్ లో లవ్ పెయిర్స్ పేరు చెప్పగానే చప్పున గుర్తుకు వచ్చే జంట కృష్ణ (Krishna)- విజయనిర్మల (Vijayanirmala) అనే చెప్పాలి... ప్రస్తుతం వారిద్దరూ మన మధ్య లేకపోయినా, తెలుగు జనం మదిలో మాత్రం సుస్థిరస్థానం సంపాదించారు. మేడ్ ఫర్ ఈచ్ అదర్ అన్న మాటకు నిలువెత్తు నిదర్శనంగా నిలచిన ఈ జంట ఇద్దరూ సినిమా రంగంలో రికార్డులు సృష్టించిన వారే కావడం విశేషం! తెలుగునాట అత్యధిక చిత్రాలలో నటించిన హీరోగా కృష్ణ సాగితే, ప్రపంచంలోనే ఎక్కువ సినిమాలు తీసిన లేడీ డైరెక్టర్ గా విజయనిర్మల గిన్నిస్ బుక్ లోనూ చోటు సంపాదించారు. అందువల్లే తెలుగు జనం కృష్ణ-విజయనిర్మల జంటను ఎన్నటికీ మరచిపోలేరు. అంతేనా! వీరిద్దరి ఆన్ స్క్రీన్ కెమిస్ట్రీ కూడా ఓ రికార్డ్ - కృష్ణ, విజయనిర్మల జంటగా 40కి పైగా చిత్రాలు వెలుగు చూశాయి... టాలీవుడ్ లో అన్ని చిత్రాలలో నటించిన జోడీ మరొకటి కానరాదు";
-        app.generateText(contentStream, doc, app.loadFont("telugu",doc), text4, app.getStartX(), app.getStartY(), width, margin, App.LEADING, "LEFT", 10);
+        app.generateText(contentStream, doc, app.loadFont("telugu",doc), text4, app.getStartX(), app.getStartY(), width, app.getMarginX(), App.LEADING, "LEFT", 10, Color.BLACK);
         String[][] loanDetails = {
             {"கடன் வகை\nType of Loan", "Secured Business Loan"},
             {"நோக்கம்\nPurpose of Loan", "Business Expansion (Purchase of plant & machinery)"},
@@ -130,10 +129,32 @@ public class App {
                         .table(myTable.build())
                         .endY(app.getEndY())
                         .build();
-        tableDrawer.draw(()-> doc,() -> app.getPDPage() ,margin); /**/
-        contentStream.close();
+        tableDrawer.draw(()-> doc,() -> {
+            PDPage newPage = app.getPDPage();
+            try{
+                app.generateHeader(doc,newPage);
+                app.generateFooter(doc, newPage);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+            return newPage;
+        } ,app.getMarginY() + (IMAGEHEIGHT/2 + LEADING)); /**/
+        
         app.generateHeader(doc,page);
         app.generateFooter(doc, page);
+
+        float y = tableDrawer.getFinalY();
+        app.setStartY(tableDrawer.getFinalY());
+        app.setStartX(App.MARGIN);
+        
+        //app.generateText(contentStream, doc, app.loadFont("tamil",doc), text, app.getStartX(), app.getStartY(), width, app.getMarginX(), App.LEADING, "LEFT", 10, Color.BLACK);
+         
+        //app.generateText(contentStream, doc, app.loadFont("hindi",doc), text2, app.getStartX(), app.getStartY(), width, app.getMarginX(), App.LEADING, "LEFT", 10, Color.BLACK);
+
+        //app.generateText(contentStream, doc, app.loadFont("kannada",doc), text3, app.getStartX(), app.getStartY(), width, app.getMarginX(), App.LEADING, "LEFT", 10, Color.BLACK);
+
+        //app.generateText(contentStream, doc, app.loadFont("telugu",doc), text4, app.getStartX(), app.getStartY(), width, app.getMarginX(), App.LEADING, "LEFT", 10, Color.BLACK);
+        contentStream.close();
         doc.save("C:\\Users\\APAC_NIKHIL.APACGP5846\\Downloads\\test1.pdf");
         System.out.println("Hello World!");
     }
@@ -234,15 +255,45 @@ public class App {
             contentStream.lineTo(this.getMaxWritableWidth(page)+MARGIN,y);
             contentStream.stroke();
             this.generateText(contentStream, document, 
-                            this.loadFont("english", document), 
-                            "APAC FINANCIAL SERVICES", 
+                            this.loadFont("english_bold", document), 
+                            "APAC Financial Services Private Limited", 
                             MARGIN, 
                             y - LEADING, 
                             this.getMaxWritableWidth(page)- MARGIN, 
                             this.getMarginX(), 
                             LEADING, 
                             "CENTER", 
-                            15);
+                            15, new Color(42,61,111));
+            this.generateText(contentStream, document, 
+                            this.loadFont("english", document), 
+                            "Office no 501, 05th Floor,South Annexe Tower 2, One World Center,Senapati Bapat Marg,Lower Parel,Mumbai - 400 013", 
+                            MARGIN+10, 
+                            this.getStartY(), 
+                            this.getMaxWritableWidth(page), 
+                            this.getMarginX(), 
+                            LEADING, 
+                            "LEFT", 
+                            10, Color.BLACK);
+            this.generateText(contentStream, document, 
+                            this.loadFont("english", document), 
+                            "Email: contactus@apacfin.com | Tel: 022- 47781138", 
+                            MARGIN+150, 
+                            this.getStartY(), 
+                            this.getMaxWritableWidth(page), 
+                            this.getMarginX(), 
+                            LEADING, 
+                            "LEFT", 
+                            10, Color.BLACK);
+            this.generateText(contentStream, document, 
+                            this.loadFont("english", document), 
+                            "CIN NO: U65999MH2017PTC294664", 
+                            MARGIN+180, 
+                            this.getStartY(), 
+                            this.getMaxWritableWidth(page), 
+                            this.getMarginX(), 
+                            LEADING, 
+                            "LEFT", 
+                            10, Color.BLACK);
             contentStream.close();
         }
     }
@@ -251,14 +302,12 @@ public class App {
     @SuppressWarnings("ConvertToTryWithResources")
     private void generateHeader(PDDocument document,PDPage page) throws  IOException{
         if(this.getHeader()){
-            float width = 60F;
-            float height = 60F;
-            float x = (page.getMediaBox().getWidth() - width)/2;
-            System.err.println("Image X:"+x+" Image Y:"+(this.getMaxWritableHeight(page)- (height/2)));
+            float x = (page.getMediaBox().getWidth() - App.IMAGEWIDTH)/2;
+            System.err.println("Image X:"+x+" Image Y:"+(this.getMaxWritableHeight(page)- (App.IMAGEHEIGHT/2)));
             InputStream imagePath = App.class.getResourceAsStream("/apaclogo.jpg");
             PDImageXObject image = PDImageXObject.createFromByteArray(document,org.apache.pdfbox.io.IOUtils.toByteArray(imagePath),"logo.jpg");
             PDPageContentStream contentStream = new PDPageContentStream(document, page, PDPageContentStream.AppendMode.APPEND, true);
-            contentStream.drawImage(image,x,this.getMaxWritableHeight(page) - (height/2),width,height);
+            contentStream.drawImage(image,x,this.getMaxWritableHeight(page) - (App.IMAGEHEIGHT/2),App.IMAGEWIDTH,App.IMAGEHEIGHT);
             contentStream.close();
         }
     }
@@ -283,6 +332,9 @@ public class App {
             case "kannada":
                 font = this.getFont("/Tiro_Kannada/TiroKannada-Regular.ttf", doc);
                 break;
+            case "english_bold":
+                font = new PDType1Font(Standard14Fonts.FontName.TIMES_BOLD);
+            break;
             default:
                 font = new PDType1Font(Standard14Fonts.FontName.TIMES_ROMAN);
         }
@@ -296,13 +348,14 @@ public class App {
     }
 
     private void generateText(PDPageContentStream contentStream, PDDocument doc, PDFont font, String text, float startX,
-            float startY, float width, float margin, float leading, String alignment, int fontSize) throws IOException {
+            float startY, float width, float margin, float leading, String alignment, int fontSize,Color color) throws IOException {
 
         float currentY = startY;
         List<String> splitText = this.splitTextIntoLines(text,width, font,fontSize);
         
         for (String linetext : splitText) {
             if (currentY - leading < margin) {
+                System.out.println("I am creating new page:"+currentY);
                 contentStream.close();
                 PDPage newPage = this.getPDPage();
                 doc.addPage(newPage);
@@ -310,6 +363,7 @@ public class App {
                 currentY = this.getStartY();
             }
             contentStream.setFont(font, fontSize);
+            contentStream.setNonStrokingColor(color);
             this.generateAlignedText(contentStream, font, linetext, startX, currentY, width, alignment,fontSize);
             currentY -= leading;
         }
